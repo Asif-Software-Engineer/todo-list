@@ -29,7 +29,8 @@ export const Wrapper = () => {
       todo, task, isEditing: !todo.isEditing} : todo))
   }
   return (
-    <div className='text-2xl w-full bg-[#1A1A40] mt-20 p-8 rounded-br text-white'>
+    <div className=' flex justify-center'>
+    <div className='text-2xl w-[60%] bg-[#1A1A40] mt-12 p-8 rounded-br text-white'>
       <h1>ToDo List</h1>
         <Form addTodo={addTodo} />
         {todos.map((todo, index) => (
@@ -42,6 +43,7 @@ export const Wrapper = () => {
             editTodo = {editTodo} />
           )
         ))}
+    </div>
     </div>
   )
 }

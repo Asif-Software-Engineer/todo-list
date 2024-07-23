@@ -1,10 +1,26 @@
-import './App.css';
-import { Wrapper } from './components/Wrapper';
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import "./App.css";
+import { Navbar } from "./components/Navbar";
+import { Home } from "./components/home/Home";
+import { Login } from "./components/Login";
+import { SignUp } from "./components/SignUp";
 
 function App() {
+
   return (
-    <div className="App">
-      <Wrapper/>
+    <div className="text-center w-full h-full bg-[#8758ff]">
+      <div>
+        <Navbar />
+
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }
