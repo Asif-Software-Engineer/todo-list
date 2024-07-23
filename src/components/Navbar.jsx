@@ -37,7 +37,7 @@ export const Navbar = () => {
           <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             <li>
               <a
-                href="/"
+                href="/home"
                 class="block py-2 pr-4 pl-3 text-white bg-[#1A1A40] rounded md:bg-transparent md:text-white md:p-0 hover:font-bold hover:text-[#1A1A40] tracking-wider"
                 aria-current="page"
               >
