@@ -17,6 +17,7 @@ export const Form = ({ addTodo }) => {
         placeholder="What is the task today?"
         onChange={(e) => setValue(e.target.value)}
       ></input>
+      
       <button
         type="submit"
         className="bg-[#8758ff] text-[#fff] none p-2 m-1 cursor-pointer"

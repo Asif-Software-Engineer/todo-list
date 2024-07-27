@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 export const Edit = ({ editTodo, task }) => {
-  const [value, setValue] = useState(task.task);
+  const [value, setValue] = useState(task.title);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    editTodo(value, task.id);
+    editTodo(value, task._id);
     setValue("")
   };
   return (

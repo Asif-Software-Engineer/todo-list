@@ -7,11 +7,11 @@ export const Todo = ({ task, toggleComplete, deleteTodo, editTodo }) => {
         onClick={() => toggleComplete(task.id)}
         className={`${task.completed ? "completed" : ""}`}
       >
-        {task.task}
+        {task.title}
       </p>
       <div>
-        <i className="fa fa-pencil-square-o cursor-pointer" onClick={() => editTodo(task.id)}></i>
-        <i className="fa fa-trash cursor-pointer" onClick={() => deleteTodo(task.id)}></i>
+        <i className="fa fa-pencil-square-o cursor-pointer" onClick={() => editTodo(task._id)}></i>
+        <i className="fa fa-trash cursor-pointer" onClick={() => deleteTodo(task._id)}></i>
       </div>
     </div>
   );

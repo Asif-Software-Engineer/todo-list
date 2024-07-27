@@ -4,7 +4,6 @@ import { Navbar } from "./components/Navbar";
 import { Home } from "./components/home/Home";
 import { Login } from "./components/Login";
 import { SignUp } from "./components/SignUp";
-import { ProRoutes } from "./components/ProRoutes";
 
 function App() {
 
@@ -18,7 +17,6 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
-            <Route path="/" element={<ProRoutes />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </BrowserRouter>
